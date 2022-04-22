@@ -1,0 +1,6 @@
+{
+	"yaml.schemas": {
+		"file:///Users/federicovitale/.vscode/extensions/atlassian.atlascode-2.9.0/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+		"https://json.schemastore.org/github-action.json": "file:///Users/federicovitale/Developer/Aquacloud/smartfish-app/.github/workflows/build.yaml"
+	}
+}
