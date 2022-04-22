@@ -70,7 +70,7 @@ jobs:
       - name: Get Docker Tags
         id: prep
         run: |
-          DOCKER_IMAGE=ghcr.io/${{ github.event.repository.owner }}/${{ github.event.repository.name }}
+          DOCKER_IMAGE=ghcr.io/${{ github.repository }}
           VERSION=noop
           BRANCH=$(echo ${GITHUB_REF#refs/heads/} | sed -r 's#/+#-#g')
 
