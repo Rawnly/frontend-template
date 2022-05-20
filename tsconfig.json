@@ -22,7 +22,10 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@lib/*": ["src/lib/*"]
+      "@lib/*": ["src/lib/*"],
+      "@store/*": ["src/store/*"],
+      "@store": ["src/store/store.ts"],
+      "~types/*": ["src/types/*"]
     }
   },
   "include": [

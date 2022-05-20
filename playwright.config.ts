@@ -1,14 +1,14 @@
-import { PlaywrightTestConfig } from '@playwright/test'
+import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
 	retries: process.env.CI ? 2 : 0,
 	forbidOnly: !!process.env.CI,
-	use: {
-		trace: 'on-first-retry'
-	},
-	testIgnore: [
-		'__tests__/**'
-	]
-}
+	reporter: process.env.CI ? 'github' : 'list',
 
-export default config
+	use: {
+		trace: 'on',
+	},
+	testIgnore: ['__tests__/**'],
+};
+
+export default config;

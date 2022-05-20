@@ -1,10 +1,10 @@
-import { AppProps } from 'next/app'
-import { FC } from 'react'
+import { AppProps } from 'next/app';
+import { FC } from 'react';
 
-import '../tailwind.css'
+import { wrapper } from '@store/wrapper';
 
-const App: FC<AppProps> = ( { Component, pageProps } ) => (
-	<Component {...pageProps} />
-);
+import '../tailwind.css';
 
-export default App
+const App: FC<AppProps> = ({ Component, pageProps }) => <Component {...pageProps} />;
+
+export default wrapper.withRedux(App);
